@@ -1,4 +1,4 @@
-package com.budiluhur;
+package com.budiluhur.product_catalog;
 
 import org.apache.catalina.Context;
 import org.apache.catalina.startup.Tomcat;

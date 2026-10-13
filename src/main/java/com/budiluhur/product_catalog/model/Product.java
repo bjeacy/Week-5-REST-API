@@ -1,4 +1,4 @@
-package com.budiluhur;
+package com.budiluhur.product_catalog.model;
 
 public class Product {
     private String id;
@@ -25,6 +25,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{id='" + id + "', name='" + name + "', price=" + price + "}";
+        return "[" + id + "] " + name + " - Rp" + price;
     }
 }

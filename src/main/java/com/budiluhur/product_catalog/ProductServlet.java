@@ -1,5 +1,7 @@
-package com.budiluhur;
+package com.budiluhur.product_catalog;
 
+import com.budiluhur.product_catalog.model.Product;
+import com.budiluhur.product_catalog.repository.ProductRepository;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -16,9 +18,6 @@ public class ProductServlet extends HttpServlet {
     public void init() {
         // Inisialisasi Repository dan data awal
         productRepository = new ProductRepository();
-        productRepository.addProduct(new Product("PRD-01", "Keyboard Mechanical", 450000.0));
-        productRepository.addProduct(new Product("PRD-02", "Mouse Wireless Silent", 175000.0));
-        productRepository.addProduct(new Product("PRD-03", "Monitor Gaming 24 Inch", 2100000.0));
     }
 
     @Override

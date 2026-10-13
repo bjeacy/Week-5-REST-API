@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ProductCatalogApplication",
+            "request": "launch",
+            "mainClass": "com.budiluhur.product_catalog.ProductCatalogApplication",
+            "projectName": "product-catalog"
+        }
+    ]
+}

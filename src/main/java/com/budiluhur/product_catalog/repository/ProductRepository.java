@@ -1,10 +1,21 @@
-package com.budiluhur;
+package com.budiluhur.product_catalog.repository;
 
+import com.budiluhur.product_catalog.exception.ProductNotFoundException;
+import com.budiluhur.product_catalog.model.Product;
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class ProductRepository {
-    private List<Product> productList = new ArrayList<>();
+
+    private final List<Product> productList = new ArrayList<>();
+
+    public ProductRepository() {
+        // Data Awal In-Memory
+        productList.add(new Product("PRD-01", "Keyboard Mechanical", 450000.0));
+        productList.add(new Product("PRD-02", "Mouse Wireless Silent", 175000.0));
+    }
 
     public void addProduct(Product product) {
         productList.add(product);
