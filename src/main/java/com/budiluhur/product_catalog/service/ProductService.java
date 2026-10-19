@@ -28,4 +28,16 @@ public class ProductService {
         productRepository.addProduct(product);
         return product;
     }
+
+    public Product updateProduct(String id, Product product) throws ProductNotFoundException {
+        return productRepository.updateProduct(id, product);
+    }
+
+    public boolean deleteProduct(String id) throws ProductNotFoundException {
+        return productRepository.deleteById(id);
+    }
+
+    public List<Product> searchProducts(String keyword) {
+        return productRepository.searchByName(keyword);
+    }
 }
